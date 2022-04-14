@@ -1,0 +1,30 @@
+<nav class=" navbar-dark">
+  <ul>
+    <li >
+      <a routerLink="employees" routerLinkActive="active" class="nav-link"><button>Employee List</button></a>
+    </li>
+    <li >
+      <a routerLink="create-employee" routerLinkActive="active" class="nav-link"><button>Add Employee</button></a>
+    </li>
+    <li style="float: right;">
+      <a routerLink="import-data" routerLinkActive="active" class="nav-link"><button>Import Data</button> </a>
+    </li>
+    <li style="float: right;">
+      <a routerLinkActive="active" class="nav-link"> <button (click)="exportexcel()">Export to Excel</button> </a>
+    </li>
+   
+  </ul>
+</nav>
+
+<h2 class="text-center">{{title}}</h2>
+
+<div class="tainer">
+  <div class="container">
+
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+<footer >
+    <span>© 2019-2022, Created and Managed By Moses Baleke.</span>
+</footer>
